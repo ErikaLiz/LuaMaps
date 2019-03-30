@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30/03/2019 01:45:04 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Tema" table="tema" optimistic-lock="version">
+        <id name="idtema" type="int">
+            <column name="idtema" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombretema" type="string">
+            <column name="nombretema" />
+        </property>
+        <property name="correo" type="string">
+            <column name="correo" />
+        </property>
+        <property name="color" type="string">
+            <column name="color" />
+        </property>
+    </class>
+</hibernate-mapping>
