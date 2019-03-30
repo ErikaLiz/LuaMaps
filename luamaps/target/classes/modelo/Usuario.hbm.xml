@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30/03/2019 01:45:04 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Usuario" table="usuario" optimistic-lock="version">
+        <id name="correo" type="string">
+            <column name="correo" />
+            <generator class="assigned" />
+        </id>
+        <property name="activo" type="java.lang.Boolean">
+            <column name="activo" />
+        </property>
+        <property name="nombreusuario" type="string">
+            <column name="nombreusuario" />
+        </property>
+        <property name="rol" type="java.lang.Integer">
+            <column name="rol" />
+        </property>
+        <property name="contrasenia" type="string">
+            <column name="contrasenia" />
+        </property>
+    </class>
+</hibernate-mapping>

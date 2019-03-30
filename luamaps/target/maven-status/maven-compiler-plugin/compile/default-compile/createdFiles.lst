@@ -1,0 +1,7 @@
+modelo/Marcador.class
+db/AbstractDAO.class
+modelo/Usuario.class
+db/HibernateUtil.class
+modelo/Megusta.class
+modelo/Tema.class
+modelo/Comentario.class
